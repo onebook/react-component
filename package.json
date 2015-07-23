@@ -1,0 +1,25 @@
+{
+  "name": "react-component",
+  "private": true,
+  "version": "0.1.0",
+  "main": "build/lib",
+  "repository": "onebook/react-component",
+  "scripts": {
+    "postinstall": "gulp babel:lib"
+  },
+  "files": [
+    "gulpfile.js",
+    "lib/"
+  ],
+  "author": "haoxin",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "3",
+    "gulp-babel": "5",
+    "gulp-webpack": "1",
+    "run-sequence": "1"
+  },
+  "devDependencies": {
+    "react": "0"
+  }
+}
