@@ -17,7 +17,7 @@ window.init = () => {
 
   React.render(
     <InfiniteList
-      className="container"
+      className='container'
       addItem={genSquare}
       addList={addList}
       delay={2000}

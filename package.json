@@ -2,24 +2,26 @@
   "name": "react-component",
   "private": true,
   "version": "0.1.0",
-  "main": "build/lib",
+  "main": "build/",
   "repository": "onebook/react-component",
   "scripts": {
-    "postinstall": "gulp babel:lib"
+    "build": "babel lib --out-dir build --stage 0",
+    "pack": "webpack --config webpack.js",
+    "postinstall": "npm run build"
   },
   "files": [
-    "gulpfile.js",
+    "build/",
     "lib/"
   ],
   "author": "haoxin",
   "license": "MIT",
   "dependencies": {
-    "gulp": "3",
-    "gulp-babel": "5",
-    "gulp-webpack": "1",
-    "run-sequence": "1"
+    "babel": "5"
   },
   "devDependencies": {
-    "react": "0"
+    "babel-core": "5",
+    "babel-loader": "5",
+    "react": "0",
+    "webpack": "1"
   }
 }
